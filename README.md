@@ -9,5 +9,5 @@
 ## With Docker
 
 1. Clone repo
-2. Run docker image with 'npm run docker:run'
-3. [Optional] Build docker image with 'npm run docker:build'
+2. Build docker image with 'npm run docker:build'
+3. Run docker image with 'npm run docker:run'
