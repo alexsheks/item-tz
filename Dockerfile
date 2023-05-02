@@ -2,10 +2,10 @@
 FROM node:18-alpine AS build
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
-COPY package.json yarn.lock ./
-RUN yarn ci --silent
+COPY package.json package-lock.json ./
+RUN npm ci --silent
 COPY . .
-RUN yarn build
+RUN npm run build
 
 # Run
 FROM nginx:stable-alpine

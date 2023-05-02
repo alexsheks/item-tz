@@ -6,6 +6,7 @@ import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import { IconButton } from '@mui/material'
 import { Link } from 'react-router-dom'
+import { FaRegEdit } from 'react-icons/fa'
 
 type Props = {
   id: number
@@ -36,7 +37,7 @@ export default function ProductCard({
       <CardActions>
         <Link to={`/edit/${id}`}>
           <IconButton aria-label="edit product">
-            <div>Редактировать</div>
+            <FaRegEdit />
           </IconButton>
         </Link>
         <Typography sx={{ marginLeft: 'auto' }} variant="h6" component="div">
